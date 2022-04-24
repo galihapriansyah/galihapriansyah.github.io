@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/output.css" />
+
+    <!-- AOS Animate link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Portfolio use Tailwind CSS</title>
   </head>
   <body>
@@ -164,7 +168,7 @@
 
     <!-- Portfolio section start -->
     <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-duration="900">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
@@ -174,7 +178,7 @@
         </div>
 
         <div class="w-full px-4 flex flex-wrap justify-center">
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 md:w-1/2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/img/1.jpg" alt="" class="w-[600px] h-[250px]">
               <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Landing Page Galih Apriansyah</h3>
@@ -182,21 +186,21 @@
             </div>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div class="rounded-md shadow-md overflow-hidden" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
               <img src="dist/img/2.jpg" alt="" class="w-[600px] h-[250px]">
               <h3 class="font-semibold text-xl text-dark mt-5 mb-3">E-Commerce</h3>
               <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti minus reiciendis dolor!</p>
             </div>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div class="rounded-md shadow-md overflow-hidden" data-aos="fade-right" data-aos-duration="1500">
               <img src="dist/img/3.jpg" alt="" class="w-[600px] h-[250px]">
               <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Technical Documentation</h3>
               <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti minus reiciendis dolor!</p>
             </div>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div class="rounded-md shadow-md overflow-hidden" data-aos="fade-left" data-aos-duration="1000">
               <img src="dist/img/4.jpg" alt="" class="w-full h-[250px]">
               <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Tribute Page</h3>
               <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti minus reiciendis dolor!</p>
@@ -209,7 +213,7 @@
 
     <!-- Clients section start -->
     <section id="clients" class="pt-36 pb-32 bg-slate-700">
-      <div class="container">
+      <div class="container" data-aos="flip-down" data-aos-duration="3000">
         <div class="w-full px-4">
           <div class="mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Clients</h4>
@@ -240,7 +244,7 @@
 
     <!-- Blog section start -->
     <section id="blog" class="pt-36 pb-32 bg-slate-100">
-      <div class="container">
+      <div class="container" data-aos="zoom-out-up" data-aos-duration="2000">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
@@ -442,6 +446,15 @@
       </div>
     </footer>
     <!-- Footer section end -->
+
+
+
+    <!-- AOS Animate script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 
     <script src="dist/js/script.js"></script>
   </body>
