@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- Header start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex flex items-center z-10">
+    <header class="bg-transparent absolute top-0 left-0 w-full flex flex items-center z-10 header">
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
@@ -57,7 +57,7 @@
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua, saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Galih Apriansyah</span></h1>
-            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-xl">Pelajar | <span class="text-dark">Pengembang Web</span></h2>
+            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-xl lead-1"><span class="text-dark lead-2">Pengembang Web</span></h2>
             <p class="font-medium text-secondary mb-10 leading-relaxed">Belajar web programming itu mudah dan menyenangkan bukan. <span class="text-dark font-semibold">Bukan!</span></p>
 
             <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
@@ -453,6 +453,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead-1", { duration: 6, text: "Pelajar | Pengembang Web", ease: "steps (20)" });
+      gsap.from(".header", { duration: 1.5, ease: "bounce.out", y: -50 });
+
     </script>
 
 
